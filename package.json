@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index",
-    "test": "jest"
+    "start": "node ./src/index.js",
+    "test": "jest",
+    "migrate": "npx sequelize db:migrate"
   },
   "keywords": [],
   "author": "",
