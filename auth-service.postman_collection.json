@@ -1,96 +1,81 @@
 {
-	"info": {
-		"_postman_id": "c5e19700-26f3-4ab1-b523-196beed7f0c3",
-		"name": "auth-service",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "14047608"
-	},
-	"item": [
-		{
-			"name": "login",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"username\":\"user\",\n    \"password\":\"user\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8000/auth/login",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"auth",
-						"login"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "validateToken",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"token\" : \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImYyZjJmMmYyLWYyZjItZjJmMi1mMmYyLWYyZjJmMmYyZjJmMiIsInVzZXJuYW1lIjoidXNlciIsImlhdCI6MTY3ODMzODgyNSwiZXhwIjoxNjc4MzQyNDI1fQ.Y-bbuWxQYnEyyXjd6ClQBBkLZr9sxiemCi1CH-CI6kg\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8000/auth/validate",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"auth",
-						"validate"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "register",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"username\":\"user4\",\n    \"password\":\"user4\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8000/auth/register",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"auth",
-						"register"
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "c5e19700-26f3-4ab1-b523-196beed7f0c3",
+    "name": "auth-service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "14047608"
+  },
+  "item": [
+    {
+      "name": "login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\":\"user\",\n    \"password\":\"user\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8000/auth/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["auth", "login"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "validateToken",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"token\" : \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImYyZjJmMmYyLWYyZjItZjJmMi1mMmYyLWYyZjJmMmYyZjJmMiIsInVzZXJuYW1lIjoidXNlciIsImlhdCI6MTY3ODMzODgyNSwiZXhwIjoxNjc4MzQyNDI1fQ.Y-bbuWxQYnEyyXjd6ClQBBkLZr9sxiemCi1CH-CI6kg\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8000/auth/validate",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["auth", "validate"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\":\"user4\",\n    \"password\":\"user4\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/auth/register",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["auth", "register"]
+        }
+      },
+      "response": []
+    }
+  ]
 }
